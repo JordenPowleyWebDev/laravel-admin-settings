@@ -27,5 +27,7 @@ class LaravelAdminSettingsServiceProvider extends ServiceProvider
                 __DIR__.'/../config/laravel-admin-settings.php' => config_path('laravel-admin-settings.php'),
             ], 'config');
         }
+
+        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
     }
 }
