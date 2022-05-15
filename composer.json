@@ -1,0 +1,32 @@
+{
+  "name": "jordenpowleywebdev/laravel-admin-settings",
+  "description": "In Development - A Laravel Admin Settings Package",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jorden Powley",
+      "email": "jorden.powley.webdev@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "orchestra/testbench": "^6.0|^7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "JordenPowleyWebDev\\LaravelAdminSettings\\": "src",
+      "JordenPowleyWebDev\\LaravelAdminSettings\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "JordenPowleyWebDev\\LaravelAdminSettings\\LaravelAdminSettingsServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "illuminate/contracts": "^8.78|^9.11",
+    "laravel/framework": "^8.78|^9.11"
+  }
+}
